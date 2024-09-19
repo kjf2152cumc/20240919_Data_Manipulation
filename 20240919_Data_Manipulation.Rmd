@@ -204,15 +204,8 @@ litters_df =
   filter(group =="Con7") %>% 
   mutate(
     wt_gain = gd18_weight - gd0_weight
-  )
+  ) 
 ```
+Practice with write CSV; how does it work. 
 
-
-
-
-
-
-
-
-
-
+Next time we are talking about tidy data and various manipulation skills. We will use pipe operators. It will be cool. 

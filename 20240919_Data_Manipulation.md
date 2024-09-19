@@ -643,7 +643,7 @@ litters_df =
   filter(group =="Con7") %>% 
   mutate(
     wt_gain = gd18_weight - gd0_weight
-  )
+  ) 
 ```
 
     ## Rows: 49 Columns: 8
@@ -654,3 +654,8 @@ litters_df =
     ## 
     ## ℹ Use `spec()` to retrieve the full column specification for this data.
     ## ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+
+Practice with write CSV; how does it work.
+
+Next time we are talking about tidy data and various manipulation
+skills. We will use pipe operators. It will be cool.
