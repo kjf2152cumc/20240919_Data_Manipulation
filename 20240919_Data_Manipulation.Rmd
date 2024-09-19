@@ -179,6 +179,16 @@ mutate(
 
 ## arrange
 
+```{r}
+
+arrange(litters_df, gd0_weight)
+
+arrange(litters_df, desc(gd0_weight))
+
+arrange(litters_df, pups_born_alive, gd0_weight)
+
+```
+
 
 ## piping 
 
