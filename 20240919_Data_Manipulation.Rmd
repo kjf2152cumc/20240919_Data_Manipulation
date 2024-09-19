@@ -118,8 +118,47 @@ Learning assessment:
 
 Filter works on rows/observations. 
 
+```{r}
+filter(litters_df, gd_of_birth == 20) 
+```
+
+This is how you can ask whether something is true about a variable! 
+
+```{r}
+filter(litters_df, pups_born_alive >8) 
+filter(litters_df, pups_born_alive >=8) 
+filter(litters_df, pups_born_alive !=9) 
+```
+
+What about character variables? 
+
+```{r}
+filter(litters_df, group=="Low8")
+filter(litters_df, group %in% c("Low7","Low8"))
+```
+```{r}
+filter(litters_df, group %in% c("Low7","Low8"), pups_born_alive ==8)
+```
+Remember, anything with variables is CASE SENSITIVE!!!
+
+Below: you can drop everything or you can specift what to drop. 
+
+```{r}
+drop_na(litters_df)
+drop_na(litters_df, gd0_weight)
+```
+^ lets you filter out rows with missing information
+
+Learning assessment: 
+
+```{r}
+filter(pups_df, sex == 1) 
+```
 
 ## mutate
+
+
+
 ## arrange
 ## piping 
 
