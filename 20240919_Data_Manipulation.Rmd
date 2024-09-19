@@ -157,9 +157,29 @@ filter(pups_df, sex == 1)
 
 ## mutate
 
+```{r, echo=FALSE, message= FALSE}
+view(mutate(litters_df, wt_gain = gd18_weight - gd0_weight))
+```
 
+You can also use mutate to log transform, take square roots, etc. You can also operate on character variables: 
+
+```{r}
+mutate(litters_df, group = str_to_lower(group)) 
+```
+Now everything in group column is lower case. 
+
+You can also do everything at the same time: 
+```{r}
+mutate(
+  litters_df,
+  wt_gain = gd18_weight - gd0_weight, 
+  group = str_to_lower(group)
+) 
+```
 
 ## arrange
+
+
 ## piping 
 
 
