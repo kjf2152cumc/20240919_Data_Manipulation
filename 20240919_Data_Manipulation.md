@@ -1,0 +1,47 @@
+Data Manipulation
+================
+Kaleb J. Frierson
+2024-09-19
+
+Major steps:
+
+Select relevant variables, filter out unnecessary obs, create new
+variables or change existing ones, arrange in an easy to digest format.
+Make it make sense to you and your research question. Each of these
+steps has a function within the dplyr package.
+
+dplyr comes with tidyverse. So just call that library.
+
+The idea that you have one function per step is an intentional choice
+within dplyr.
+
+Dataframe centric: start with a dataframe and end with a dataframe. One
+goes in and one goes out. That is how it works in tidyverse every time.
+
+This allows you to pipe together collections of operations that gets you
+to the dataset that you need. Piece meal resulting in big thing that you
+need. Pipes came from magrittr package; loaded by everything in the
+tidyverse. There is an updated one that is built into R!
+
+So, what are pipe operators?
+
+Steps to day:
+
+    Wake up, brush teeth, do data science
+
+In “R” I can nest these actions:
+
+happy_kaleb = do_ds(brush_teeth(wake_up(asleep_kaleb)))
+
+This is hard to read! Alternatively you can name a bunch of intermediate
+objects that you don’t need and you end up with a bunch of dataframes
+and you might not know which to use.
+
+Piping says start with one thing go to another then another:
+
+happy_kaleb = wake_up(asleep_kaleb) \|\> brush_teeth() \|\> do_ds()
+
+Read \|\> as “and then”; you have all of these steps linked together!
+
+Per Jeff: be greatful that you don’t have to appreciate how great piping
+is!
